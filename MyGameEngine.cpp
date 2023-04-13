@@ -20,9 +20,5 @@ void MyGameEngine::Init()
 	//__super::Init();
 
 	//Map Load
-	World->SpawnActor(new APlayer());
-	World->SpawnActor(new AGoal());
-	World->SpawnActor(new AFloor());
-	World->SpawnActor(new AMonster());
-	World->SpawnActor(new AWall());
+	Load("level1.dat");
 }

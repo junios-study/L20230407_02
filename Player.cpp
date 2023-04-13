@@ -7,6 +7,11 @@ APlayer::APlayer()
 	Y = 2;
 }
 
+APlayer::APlayer(int NewX, int NewY, char NewShape)
+	: AActor(NewX, NewY, NewShape)
+{
+}
+
 APlayer::~APlayer()
 {
 }

@@ -1,4 +1,6 @@
 #pragma once
+#include <string>
+
 class GameEngine
 {
 public:
@@ -6,6 +8,7 @@ public:
 	virtual ~GameEngine();
 
 	virtual void Init();
+	virtual void Load(std::string Filename);
 	void Run();
 	void Stop();
 

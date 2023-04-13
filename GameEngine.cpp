@@ -69,7 +69,7 @@ void GameEngine::Load(std::string Filename)
         if (c == '\n')
         {
             ++PositionY;
-            PositionX = 1;
+            PositionX = 0;
             //printf("¡ŸπŸ≤ﬁ");
         }
         //printf("%d, %d\n", PositionX, PositionY);

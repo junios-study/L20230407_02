@@ -10,6 +10,7 @@ AGoal::AGoal()
 AGoal::AGoal(int NewX, int NewY, char NewShape)
 	: AActor(NewX, NewY, NewShape)
 {
+	SortOrder = 2;
 }
 
 AGoal::~AGoal()

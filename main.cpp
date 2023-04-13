@@ -1,9 +1,7 @@
 #include <iostream>
 #include "MyGameEngine.h"
 
-
 using namespace std;
-
 
 int main()
 { 
@@ -12,6 +10,8 @@ int main()
 	Engine->Init();
 	Engine->Run();
 
+
+	delete Engine;
 
 
 	return 0;

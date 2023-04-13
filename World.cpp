@@ -1,5 +1,6 @@
 #include "World.h"
 #include "Actor.h"
+#include <algorithm>
 
 UWorld::UWorld()
 {
@@ -43,4 +44,10 @@ void UWorld::Render()
 	{
 		ProcessActor->Render();
 	}
+}
+
+void UWorld::Sort()
+{
+	//std::sort(Actors.begin(), Actors.end());
+	std::sort(Actors.begin(), Actors.end(), AActor::Compare);
 }

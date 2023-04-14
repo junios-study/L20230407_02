@@ -15,6 +15,9 @@ public:
 
 	void Sort();
 
+	//Physics
+	bool CheckCollision(int X, int Y);
+
 public:
 	std::vector<AActor*> Actors;
 };

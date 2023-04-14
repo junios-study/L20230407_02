@@ -31,5 +31,9 @@ public:
 	char Shape;
 	int SortOrder = 1;
 	bool bIsCollision = false;
+
+	int R;
+	int G;
+	int B;
 };
 

@@ -22,14 +22,6 @@ void UWorld::SpawnActor(AActor* NewActor)
 	}
 }
 
-void UWorld::Input()
-{
-	for (auto ProcessActor : Actors)
-	{
-		ProcessActor->Input();
-	}
-}
-
 void UWorld::Tick()
 {
 	for (auto ProcessActor : Actors)

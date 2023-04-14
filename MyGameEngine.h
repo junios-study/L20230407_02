@@ -1,6 +1,8 @@
 #pragma once
 #include "GameEngine.h"
 
+//글쓰기 위에서 아래로, 왼쪽에서 오른쪽
+
 class MyGameEngine : public GameEngine
 {
 private:

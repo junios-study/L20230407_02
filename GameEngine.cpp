@@ -10,11 +10,13 @@
 
 #include <iostream>
 #include <algorithm>
+#include <conio.h>
 
 GameEngine::GameEngine()
 {
 	bIsRunning = true;
 	World = nullptr;
+    KeyCode = 0;
 }
 
 GameEngine::~GameEngine()
@@ -104,14 +106,12 @@ void GameEngine::Stop()
 
 void GameEngine::Input()
 {
-	World->Input();
-
+    KeyCode = _getch();
 }
 
 void GameEngine::Tick()
 {
 	World->Tick();
-
 }
 
 void GameEngine::Render()

@@ -10,7 +10,6 @@ public:
 
 	void SpawnActor(AActor* NewActor);
 
-	virtual void Input();
 	virtual void Tick();
 	virtual void Render();
 

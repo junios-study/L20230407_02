@@ -1,5 +1,6 @@
 #include <iostream>
 #include "MyGameEngine.h"
+#include "SDL.h"
 
 using namespace std;
 

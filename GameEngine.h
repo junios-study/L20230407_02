@@ -8,7 +8,7 @@ public:
 	virtual ~GameEngine();
 
 	virtual void Init();
-	virtual void Load(std::string Filename);
+	virtual void LoadLevel(std::string Filename);
 	void Run();
 	void Stop();
 

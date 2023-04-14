@@ -48,6 +48,5 @@ void UWorld::Render()
 
 void UWorld::Sort()
 {
-	//std::sort(Actors.begin(), Actors.end());
 	std::sort(Actors.begin(), Actors.end(), AActor::Compare);
 }

@@ -31,7 +31,7 @@ void GameEngine::Init()
 	World = new UWorld();
 }
 
-void GameEngine::Load(std::string Filename)
+void GameEngine::LoadLevel(std::string Filename)
 {
     FILE* file;
     char c;

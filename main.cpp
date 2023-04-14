@@ -5,14 +5,10 @@ using namespace std;
 
 int main()
 { 
-	MyGameEngine* Engine = new MyGameEngine();
+	GEngine->Init();
+	GEngine->Run();
 
-	Engine->Init();
-	Engine->Run();
-
-
-	delete Engine;
-
+	delete GEngine;
 
 	return 0;
 }

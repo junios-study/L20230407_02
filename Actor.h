@@ -11,9 +11,14 @@ public:
 	virtual void Tick();
 	virtual void Render();
 
-	bool operator<(const AActor* RHS)
+	bool operator<(const AActor& RHS)
 	{
-		return (this->SortOrder) < (RHS->SortOrder);
+		return (this->SortOrder) < (RHS.SortOrder);
+	}
+
+	bool operator>(const AActor& RHS)
+	{
+		return (this->SortOrder) > (RHS.SortOrder);
 	}
 
 	static inline bool Compare(const AActor* LHS, const AActor* RHS)
